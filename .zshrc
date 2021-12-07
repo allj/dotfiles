@@ -12,6 +12,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # ================================================================================
+# EXPORTS
+# ================================================================================
+
+export FZF_DEFAULT_COMMAND='fd --type file --hidden'
+
+# ================================================================================
 # ALIASES
 # ================================================================================
 
@@ -25,13 +31,14 @@ alias xxd='xxd -g 1'
 alias man=batman
 alias rgi='rg -i'
 alias rgv='rg -v'
-alias brg=batgrep
+alias rgb=batgrep
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # ================================================================================
 # OPTIONS
 # ================================================================================
 
+unsetopt BEEP
 setopt HIST_IGNORE_SPACE
 
 # ================================================================================
@@ -78,11 +85,11 @@ zle -N bracketed-paste bracketed-paste-magic
 # ================================================================================
 
 vimz() {
-    fzf --prompt "vim " -1 -0 -q "$1" | xargs nvim
+    FZF_DEFAULT_COMMAND=$(echo -n fd "$@") fzf --prompt "vim " -1 -0 -m --bind ctrl-a:toggle-all | xargs nvim -p
 }
 
 codz() {
-    fzf --prompt "vscode " -1 -0 -q "$1" | xargs code
+    FZF_DEFAULT_COMMAND=$(echo -n fd "$@") fzf --prompt "vscode " -1 -0 -m --bind ctrl-a:toggle-all | xargs code
 }
 
 # ================================================================================
