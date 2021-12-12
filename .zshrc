@@ -85,11 +85,11 @@ zle -N bracketed-paste bracketed-paste-magic
 # ================================================================================
 
 vimz() {
-    FZF_DEFAULT_COMMAND=$(echo -n fd "$@") fzf --prompt "vim " -1 -0 -m --bind ctrl-a:toggle-all | xargs nvim -p
+    fd "$@" | fzf --prompt "vim " -1 -0 -m --bind ctrl-a:toggle-all | xargs nvim -p
 }
 
 codz() {
-    FZF_DEFAULT_COMMAND=$(echo -n fd "$@") fzf --prompt "vscode " -1 -0 -m --bind ctrl-a:toggle-all | xargs code
+    fd "$@" | fzf --prompt "vscode " -1 -0 -m --bind ctrl-a:toggle-all | xargs code
 }
 
 # ================================================================================
