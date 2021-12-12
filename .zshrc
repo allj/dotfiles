@@ -65,7 +65,7 @@ zstyle ':autocomplete:tab:*' insert-unambiguous yes
 
 # If there are fewer than this many lines below the prompt, move the prompt up
 # to make room for showing this many lines of completions (approximately).
-zstyle ':autocomplete:*' list-lines 8  # int
+zstyle ':autocomplete:*' list-lines 16  # int
 
 # NOTE: This setting can NOT be changed at runtime.
 # complete-word: (Shift-)Tab inserts the top (bottom) completion.
