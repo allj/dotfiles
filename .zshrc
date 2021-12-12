@@ -26,6 +26,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
 alias v='f -e nvim'
+alias c='f -e code'
 alias m='f -e mpv'
 alias xxd='xxd -g 1'
 alias man=batman
