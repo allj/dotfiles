@@ -100,6 +100,9 @@ codz() {
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export FZF_COMPLETION_TRIGGER='**'
+export FZF_COMPLETION_OPTS='--info=inline'
+
 _fzf_compgen_path() {
     fd --hidden --follow --exclude ".git" . "$1"
 }
