@@ -44,6 +44,9 @@ Plug 'mbbill/undotree'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'elzr/vim-json'
 Plug 'ziglang/zig.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
@@ -83,5 +86,9 @@ nnoremap <leader>c :BCommits<CR>
 " Filetypes
 nnoremap <leader>t :Filetypes<CR>
 
-let g:deoplete#enable_at_startup = 1
 let g:airline#extensions#tabline#enabled = 1
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
