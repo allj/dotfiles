@@ -16,7 +16,6 @@ Plug 'morhetz/gruvbox'
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
@@ -38,8 +37,6 @@ Plug 'neomake/neomake'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'fatih/vim-go'
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
 Plug 'mbbill/undotree'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'elzr/vim-json'
@@ -47,6 +44,7 @@ Plug 'ziglang/zig.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'ggandor/lightspeed.nvim'
 
 call plug#end()
 
