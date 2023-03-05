@@ -44,7 +44,7 @@ Plug 'ziglang/zig.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'ggandor/lightspeed.nvim'
+" Plug 'ggandor/lightspeed.nvim'
 
 call plug#end()
 
@@ -58,6 +58,9 @@ filetype plugin on
 filetype indent on
 
 autocmd FileType javascript setlocal sw=2 sts=2 et
+autocmd FileType sh setlocal sw=2 sts=2 et
+autocmd FileType zsh setlocal sw=2 sts=2 et
+autocmd FileType bash setlocal sw=2 sts=2 et
 
 " This unsets the 'last search pattern' register
 nnoremap <Bslash> :noh<CR>
