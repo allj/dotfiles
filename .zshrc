@@ -16,12 +16,13 @@ fi
 # ================================================================================
 
 export FZF_DEFAULT_COMMAND='fd --type file --hidden'
+export BAT_THEME="gruvbox-dark"
 
 # ================================================================================
 # ALIASES
 # ================================================================================
 
-alias ls='colorls'
+alias ls='ls -G'
 alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
@@ -123,6 +124,7 @@ _fzf_comprun() {
 
 # fasd
 eval "$(fasd --init auto)"
+unalias sd
 
 # iTerm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
