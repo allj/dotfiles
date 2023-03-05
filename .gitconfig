@@ -3,6 +3,6 @@
 [commit]
 	gpgsign = true
 [include]
-    path = .gitconfig-user
-    path = .gitconfig-alias
-    path = .gitconfig-delta
+    path = .config/git/user.gitconfig
+    path = .config/git/alias.gitconfig
+    path = .config/git/delta.gitconfig
