@@ -1,0 +1,8 @@
+[core]
+	editor = nvim -u NONE
+[commit]
+	gpgsign = true
+[include]
+    path = .gitconfig-user
+    path = .gitconfig-alias
+    path = .gitconfig-delta

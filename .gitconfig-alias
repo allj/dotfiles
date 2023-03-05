@@ -1,0 +1,12 @@
+[alias]
+    wc = whatchanged
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	s = status --short
+	sp = status --porcelain
+	amend = commit --amend
+    sfzf = "!f() { sed 's/.\\{2\\} //' | fzf --height=90% --no-separator --info=inline --border --layout=reverse --cycle -m -0 --preview='git diff {} | delta --color-only' \"$@\"; }; f"
+    addz = "!f() { git sp | grep -v '^\\([AMDRTC] \\|.D\\)' | git sfzf --prompt='Add ' | xargs git add; }; f"
+    restorez = "!f() { git sp | grep '^.M'  | git sfzf --prompt='Restore ' |   | xargs git restore; }; f"
+    rmz = "!f() { fd | git sfzf --prompt='Remove ' | xargs git rm; }; f"
+
