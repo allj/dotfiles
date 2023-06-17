@@ -44,6 +44,13 @@ unsetopt BEEP
 setopt HIST_IGNORE_SPACE
 
 # ================================================================================
+# KEY BINDINGS
+# ================================================================================
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# ================================================================================
 # ZSTYLE
 # ================================================================================
 
@@ -128,6 +135,11 @@ unalias sd
 
 # iTerm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# asdf
+. "$HOME/.asdf/asdf.sh"
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
 
 # Sheldon
 eval "$(sheldon source)"
