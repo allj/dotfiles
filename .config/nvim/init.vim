@@ -44,7 +44,7 @@ Plug 'ziglang/zig.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
-" Plug 'ggandor/lightspeed.nvim'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
