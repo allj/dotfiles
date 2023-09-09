@@ -11,7 +11,7 @@ let mapleader = ";"
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'sickill/vim-monokai'
+" Plug 'sickill/vim-monokai'
 Plug 'morhetz/gruvbox'
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -19,7 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -44,7 +44,7 @@ Plug 'ziglang/zig.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -58,6 +58,8 @@ filetype plugin on
 filetype indent on
 
 autocmd FileType javascript setlocal sw=2 sts=2 et
+autocmd FileType typescript setlocal sw=2 sts=2 et
+autocmd FileType json setlocal sw=2 sts=2 et
 autocmd FileType sh setlocal sw=2 sts=2 et
 autocmd FileType zsh setlocal sw=2 sts=2 et
 autocmd FileType bash setlocal sw=2 sts=2 et
@@ -93,3 +95,6 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+nnoremap <leader>nt <cmd>NERDTreeToggle<cr>
+nnoremap <leader>ut <cmd>UndotreeToggle<cr>
