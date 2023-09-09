@@ -34,6 +34,8 @@ alias man=batman
 alias rgi='rg -i'
 alias rgv='rg -v'
 alias rgb=batgrep
+alias brew_x86_64='arch -x86_64 /usr/local/bin/brew'
+alias brew_m1='arch -arm64e /opt/homebrew/bin/brew'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # ================================================================================
