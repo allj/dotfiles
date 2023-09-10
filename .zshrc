@@ -23,7 +23,7 @@ export BAT_THEME="gruvbox-dark"
 # ================================================================================
 
 alias ls='ls -G'
-alias vi='nvim'
+alias vi='nvim --clean'
 alias vim='nvim'
 alias view='nvim -R'
 alias v='f -e nvim'
