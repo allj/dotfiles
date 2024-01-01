@@ -19,7 +19,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -46,6 +45,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'nvim-telescope/telescope.nvim'
 " Plug 'github/copilot.vim'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -96,7 +96,6 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-nnoremap <leader>tt <cmd>NERDTreeToggle<cr>
 nnoremap <leader>tu <cmd>UndotreeToggle<cr>
 nnoremap <leader>tg <cmd>TagbarToggle<cr>
 nnoremap <leader>ts <cmd>SemanticHighlightToggle<cr>
