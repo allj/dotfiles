@@ -6,3 +6,5 @@
     path = .config/git/user.gitconfig
     path = .config/git/alias.gitconfig
     path = .config/git/delta.gitconfig
+[init]
+	defaultBranch = main
