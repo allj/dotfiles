@@ -17,6 +17,7 @@ fi
 
 export FZF_DEFAULT_COMMAND='fd --type file --hidden'
 export BAT_THEME="gruvbox-dark"
+export EDITOR="nvim"
 
 # ================================================================================
 # ALIASES
