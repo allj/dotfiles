@@ -45,6 +45,7 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 unsetopt BEEP
 setopt HIST_IGNORE_SPACE
+set -o vi
 
 # ================================================================================
 # KEY BINDINGS
@@ -140,12 +141,16 @@ unalias sd
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # asdf
-. "$HOME/.asdf/asdf.sh"
-fpath=(${ASDF_DIR}/completions $fpath)
-autoload -Uz compinit && compinit
+# . "$HOME/.asdf/asdf.sh"
+# fpath=(${ASDF_DIR}/completions $fpath)
 
 # Sheldon
 eval "$(sheldon source)"
+
+# mise
+eval "$(mise activate zsh)"
+
+autoload -Uz compinit && compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
