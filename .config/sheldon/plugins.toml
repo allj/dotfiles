@@ -8,8 +8,8 @@ github = 'romkatv/powerlevel10k'
 [plugins.history-substring-search]
 github = 'zsh-users/zsh-history-substring-search'
 
-[plugins.asdf]
-github = 'kiurchv/asdf.plugin.zsh'
+# [plugins.asdf]
+# github = 'kiurchv/asdf.plugin.zsh'
 
 [plugins.base16]
 github = 'chriskempson/base16-shell'
