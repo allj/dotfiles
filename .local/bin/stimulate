@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Usage: stimulate 12h
+# Supports h (hours), m (minutes), s (seconds)
+
+input=$1
+unit=${input: -1}
+value=${input%?}
+
+case $unit in
+  h) seconds=$((value * 3600)) ;;
+  m) seconds=$((value * 60)) ;;
+  s) seconds=$value ;;
+  *) echo "Usage: ./brew.sh [number][h|m|s] (e.g., 12h)"; exit 1 ;;
+esac
+
+echo "Caffeinating for $input ($seconds seconds)..."
+caffeinate -dt $seconds
