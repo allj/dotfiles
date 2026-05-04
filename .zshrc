@@ -133,17 +133,6 @@ _fzf_comprun() {
   esac
 }
 
-# fasd
-eval "$(fasd --init auto)"
-unalias sd
-
-# iTerm
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# asdf
-# . "$HOME/.asdf/asdf.sh"
-# fpath=(${ASDF_DIR}/completions $fpath)
-
 # Sheldon
 eval "$(sheldon source)"
 
