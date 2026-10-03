@@ -1,2 +1,3 @@
 keybind = global:option+escape=toggle_quick_terminal
+theme = Gruvbox Dark
 
