@@ -46,6 +46,8 @@ Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'nvim-telescope/telescope.nvim'
 " Plug 'github/copilot.vim'
 Plug 'dense-analysis/ale'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'laktak/tome'
 
 call plug#end()
 
